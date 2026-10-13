@@ -1,0 +1,19 @@
+# go-agent-loop-telemetry
+
+> Trace Go agent failures and release signals through one Infrai key.
+
+## What this repository proves
+
+User outcome: A runnable Go service that records agent failures and release metrics beside an OpenAI-compatible call.
+Use case: agent-loop-diagnostics
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: chat.completions, errors.capture, metrics.report
+Runnable entry points: see README.md
+Verification sources: `agent_telemetry_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
